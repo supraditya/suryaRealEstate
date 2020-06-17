@@ -2968,7 +2968,7 @@ select {
     top: 35px
 }
 
-header.foo .hpme_icon {
+header.foo .home_icon {
     margin-top: 25px;
     transition: .5s
 }
@@ -3237,7 +3237,8 @@ header .md img {
 }
 
 header.foo .md img {
-    width: 60px
+    width: 60px;
+    margin-top: 2px !important;
 }
 
 header .md .lo_cl {
