@@ -3241,6 +3241,28 @@ header.foo .md img {
     margin-top: 2px !important;
 }
 
+.logo_style {
+    height: 120px;
+    width: 120px !important;
+}
+
+.minilogo_style {
+    height: 68px;
+    width: 68px;
+}
+
+@media only screen and (max-width: 975px) {
+    .logo_style {
+        height: 90px;
+        width: 90px !important;
+    }
+    .minilogo_style {
+        padding-top: 0px !important;
+        height: 68px;
+        width: 68px !important;
+    }
+}
+
 header .md .lo_cl {
     background: #ffdf8f;
     width: 66px;
