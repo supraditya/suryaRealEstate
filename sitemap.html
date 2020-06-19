@@ -508,7 +508,9 @@ src="https://www.facebook.com/tr?id=1083892991650340&ev=PageView&noscript=1"
         <div id="map_dropdown">
             <select name="locations" id="locations" onclick="initMap()">
                 <!-- Update options acc to api fetch and value with location url -->
-                <option value="paris">Paris</option>
+                <!-- If url is https://goo.gl/maps/oFFpr5qyJ229Mk9KA, just paste oFFpr5qyJ229Mk9KA in value -->
+                <!-- API KEY NEEDS TO BE CHANGED AND BILLING MUST BE ENABLED -->
+                <option value="oFFpr5qyJ229Mk9KA">Laxmi Apartment</option>
                 <option value="Delhi">Delhi</option>
                 <option value="London">London</option>
               </select>
@@ -517,7 +519,8 @@ src="https://www.facebook.com/tr?id=1083892991650340&ev=PageView&noscript=1"
             <script>
                 function initMap() {
                     var url = document.getElementById('locations').value;
-                    console.log(url);
+                    var url1 = 'https://www.google.com/maps/search/?api=1&query_place_id=' + url;
+                    console.log(url1);
                     var test = {
                         lat: -25.363,
                         lng: 131.044
