@@ -13138,6 +13138,7 @@ html.lb-disable-scrolling {
         width: 100%
     }
     .mobile_lo_cl {
+        padding-top: 3%;
         height: 70px;
         width: 68px;
         overflow: hidden
