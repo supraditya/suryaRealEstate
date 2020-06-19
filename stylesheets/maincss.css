@@ -3251,7 +3251,7 @@ header.foo .md img {
     width: 68px !important;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 980px) {
     .logo_style {
         height: 90px;
         width: 90px !important;
