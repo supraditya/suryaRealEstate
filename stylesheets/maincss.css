@@ -3492,7 +3492,10 @@ img.dearch_close23 {
 }
 
 .md.log a {
-    display: block
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 2% !important;
 }
 
 .fs {
