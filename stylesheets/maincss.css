@@ -1,4 +1,4 @@
-#map_dropdown {
+/* #map_dropdown {
     width: 40%;
     height: 40px;
     margin-bottom: 2%;
@@ -8,6 +8,14 @@
     width: 80%;
     height: 400px;
     background-color: grey;
+} */
+
+.mobile-nav {
+    margin-left: 3%;
+}
+
+.mobile-subnav {
+    margin-left: 5%;
 }
 
 .separator-line {
@@ -3264,6 +3272,9 @@ header.foo .md img {
 }
 
 @media only screen and (max-width: 980px) {
+    .desktop_links {
+        display: none;
+    }
     .logo_style {
         height: 90px;
         width: 90px !important;
