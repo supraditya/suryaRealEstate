@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Sitemap | Surya NestBuild Ltd.</title>
+    <title>Projects | Surya NestBuild Ltd.</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=5, IE=7, IE=8, IE=9, IE=10" />
@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
     <meta http-equiv="content-language" content="english" />
-    <link rel="canonical" href="sitemap.html" />
+    <link rel="canonical" href="mapview.html" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 
@@ -314,13 +314,13 @@ src="https://www.facebook.com/tr?id=1083892991650340&ev=PageView&noscript=1"
     <section class="fs_inner ">
         <div class="pc ">
             <!-- INSERT BACKGROUND IMAGE EJS AS CSS BACKGROUND ATTRIBUTE HERE -->
-            <div style="width:100%; height:100%; background:url(assets/sitemap_placeholder.jpg) no-repeat center center; background-size:cover; "></div>
+            <div style="width:100%; height:100%; background:url(assets/mapview_placeholder.jpg) no-repeat center center; background-size:cover; "></div>
         </div>
         <div class="fd "></div>
         <div class="tx ">Passion at Work</div>
     </section>
     <section class="innercont pg_philosophy ">
-        <div id="map_dropdown ">
+        <div id="map_dropdown " style="width: 40%; margin-bottom: 4%;">
             <select name="locations " id="locations " onclick="initMap() ">
                 <!-- Update options acc to api fetch and value with location url -->
                 <!-- If url is https://goo.gl/maps/oFFpr5qyJ229Mk9KA, just paste oFFpr5qyJ229Mk9KA in value -->
@@ -330,38 +330,37 @@ src="https://www.facebook.com/tr?id=1083892991650340&ev=PageView&noscript=1"
                 <option value="London ">London</option>
               </select>
         </div>
-        <div id="map ">
+        <div id="wrapper">
+            <!-- NeedssqueryString, place_id, centerCoord, cid, -->
+            <div id="map"></div>
             <script>
-                function initMap() {
-                    var url = document.getElementById('locations').value;
-                    var url1 = 'https://www.google.com/maps/search/?api=1&query_place_id=' + url;
-                    console.log(url1);
-                    var test = {
-                        lat: -25.363,
-                        lng: 131.044
+                (function() {
+                    var setting = {
+                        "height": 500,
+                        "width": 700,
+                        "zoom": 17,
+                        "queryString": "Parvathi Path, New Chitragupta Nagar, Mahatma Gandhi Nagar, Chitragupta Nagar, Patna, Bihar 800020, India",
+                        "place_id": "EmlQYXJ2YXRoaSBQYXRoLCBOZXcgQ2hpdHJhZ3VwdGEgTmFnYXIsIE1haGF0bWEgR2FuZGhpIE5hZ2FyLCBDaGl0cmFndXB0YSBOYWdhciwgUGF0bmEsIEJpaGFyIDgwMDAyMCwgSW5kaWEiLiosChQKEgkjhYXAlljtORGoGgu9tPRksRIUChIJ2TB5ipZY7TkRpJTNLelfGk0",
+                        "satellite": false,
+                        "centerCoord": [25.598955407608212, 85.16683139999999],
+                        "cid": "0xb164f4b4bd0b1aa8",
+                        "lang": "en",
+                        "cityUrl": "/india/patna-10047",
+                        "cityAnchorText": "Map of Patna, Bihar, India",
+                        "id": "map",
+                        "embed_id": "229640"
                     };
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 4,
-                        center: test
-                    });
-                    var marker = new google.maps.Marker({
-                        position: test,
-                        map: map
-                    });
-                }
-            </script>
-            <!-- ADD YOUR OWN GOOGLE MAPS API KEY HERE -->
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_fBcPEyYPUoI0rRToWA_jwxbGZv7ttjQ&callback=initMap ">
-                // <script async defer src="https://maps.googleapis.com/maps/api/js?key=YourAPIKeyHERE&callback=initMap ">
-            </script>
-        </div>
-        <div class="flexinner flex3 ">
-            <div class="flexslider ">
-                <ul class="slides ">
-                </ul>
-            </div>
-        </div>
-        </div>
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=229640';
+                    s.async = true;
+                    s.onload = function(e) {
+                        window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                })();
+            </script><a href="https://1map.com/map-embed">1 Map</a></div>
     </section>
 
     <footer>
