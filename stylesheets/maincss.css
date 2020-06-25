@@ -58,38 +58,43 @@ td {
 html {
     scroll-behavior: smooth !important;
 }
-.projectsTiles{
-    width:100%;
-    margin-left:80px;
-    padding-left:80px;
+
+.projectsTiles {
+    width: 100%;
+    margin-left: 80px;
+    padding-left: 80px;
     align-items: center;
 }
-.projectContainer{
+
+.projectContainer {
     display: inline-block;
-    position:relative;
-    width:400px;
-    height:500px;
-    margin:5px;
-    border-radius:10px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 10px;
     overflow: hidden;
 }
-.projectContainer img{
-    width:400px;
-    height:500px;
-    z-index:-1;
+
+.projectContainer img {
+    width: 400px;
+    height: 500px;
+    z-index: -1;
     transform: scale(1.0);
-    transition: transform 1.5s ;
-    
+    transition: transform 1.5s;
 }
-.projectContainer img:hover{
+
+.projectContainer img:hover {
     transform: scale(1.2);
-    transition: transform 1.5s ;
+    transition: transform 1.5s;
 }
-.projectButton{
+
+.projectButton {
     position: absolute;
-    bottom:10px;
-    right:150px;
+    bottom: 10px;
+    right: 150px;
 }
+
 .mfp-bg {
     top: 0;
     left: 0;
@@ -3951,6 +3956,14 @@ div#mCSB_6_scrollbar_vertical {
     height: auto
 }
 
+
+/* FOR TESTIMONIALS CAROUSEL WINDOW SIZE */
+
+.homecont1 .flexslider .slides img {
+    max-height: 300px;
+    height: auto
+}
+
 .homecont .ttl {
     font-size: 26px;
     line-height: 26px;
@@ -3963,6 +3976,10 @@ div#mCSB_6_scrollbar_vertical {
 
 .hp_fea {
     border-bottom: 1px solid #cac4c4
+}
+
+.testi_carousel {
+    height: 300px !important;
 }
 
 .hp_fea .dv {
@@ -14578,29 +14595,28 @@ html.lb-disable-scrolling {
         margin-left: 0;
         max-width: inherit
     }
-    .projectContainer{
-        width:300px;
-        height:400px;
-        margin-right:50px !important;
+    .projectContainer {
+        width: 300px;
+        height: 400px;
+        margin-right: 50px !important;
         padding-right: 40px !important;
     }
-    .projectContainer img{
-        width:300px;
-        height:400px;
+    .projectContainer img {
+        width: 300px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width:480px) {
-    .projectContainer{
-        width:300px;
-        height:400px;
-        margin-right:10px;
+    .projectContainer {
+        width: 300px;
+        height: 400px;
+        margin-right: 10px;
         padding-right: 10px;
-
     }
-    .projectContainer img{
-        width:300px;
-        height:400px;
+    .projectContainer img {
+        width: 300px;
+        height: 400px;
     }
     .gallery_box .flexslider ul.flex-direction-nav {
         display: block
