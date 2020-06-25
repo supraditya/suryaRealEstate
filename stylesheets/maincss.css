@@ -2704,7 +2704,8 @@ html[xmlns] .flexslider .slides {
 
 .flex-control-nav {
     width: 100%;
-    position: absolute;
+    margin-top: 3%;
+    /* position: absolute; */
     bottom: -50px;
     text-align: center
 }
