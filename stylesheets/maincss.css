@@ -4,6 +4,33 @@
     margin-bottom: 2% !important;
 } */
 
+.customer-testimonial-image {
+    width: 75px !important;
+    height: 75px !important;
+    border-radius: 50%;
+}
+
+.testimonial-card {
+    box-shadow: 10px #ccc;
+}
+
+
+/* @media only screen and (max-width: 770px) {
+    .customer-testimonial-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+} */
+
+
+/* Breakpoint at 770px */
+
+.customer-testimonial-quote {
+    padding: 4px 4px 4px 4px !important;
+    font-style: italic;
+}
+
 .separator-line {
     width: 60% !important;
     height: 4px !important;
