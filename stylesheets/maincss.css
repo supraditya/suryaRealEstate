@@ -106,15 +106,14 @@ html {
 
 .projectsTiles {
     width: 100%;
-    margin-left: 80px;
-    padding-left: 80px;
     align-items: center;
+    margin-left:100px;
 }
 
 .projectContainer {
     display: inline-block;
     position: relative;
-    width: 400px;
+    width: 40%;
     height: 500px;
     margin: 0px;
     border-radius: 10px;
@@ -123,7 +122,7 @@ html {
 }
 
 .projectContainer img {
-    width: 400px;
+    width: 100%;
     height: 500px;
     z-index: -1;
     transform: scale(1.0);
@@ -147,9 +146,10 @@ html {
 .projectButton {
     position: absolute;
     bottom: 30px;
-    right: 150px;
+    right: 165px;
     background-color: transparent !important;
-    border: 1px solid black;
+    color : white;
+    border: 1px solid white;
     font-weight: 20px;
     outline: none;
     transition: border, color 0.7s;
@@ -164,9 +164,10 @@ html {
 }
 
 .projectContainer:hover .projectButton {
-    border: 1px solid white;
-    color: white;
-    transition: border, color 0.7s;
+    border: 1px solid #f4db1f;
+    background-color: black;
+    color: #f4db1f;
+    transition: border, color, background-color 0.7s;
 }
 
 .mfp-bg {
@@ -12682,6 +12683,21 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:1170px) {
+    .projectsTiles {
+        margin-left:100px;
+    }
+    
+    .projectContainer {
+        width: 40%;
+        height: 400px;
+    }
+    
+    .projectContainer img {
+        height: 400px;
+    }
+    .projectButton {
+        left: 165px;
+    }
     .vedio_section ul li {
         max-width: 31%
     }
@@ -12914,6 +12930,17 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:980px) {
+    .projectContainer {
+        width: 40%;
+        height: 350px;
+    }
+    
+    .projectContainer img {
+        height: 350px;
+    }
+    .projectButton {
+        left: 145px;
+    }
     .pg_bod .dv .lk img {
         width: 96%
     }
@@ -13366,6 +13393,12 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:870px) {
+    .projectsTiles {
+        margin-left:100px;
+    }
+    .projectButton {
+        left: 110px;
+    }
     .site_map .dv {
         width: 50%;
         margin-bottom: 20px
@@ -13373,6 +13406,19 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:800px) {
+    .projectContainer {
+        margin-left: -100px;
+        
+        width: 100%;
+        height: 400px;
+    }
+    
+    .projectContainer img {
+        height: 400px;
+    }
+    .projectButton {
+        left: 45%;
+    }
     .gallery_mn2 .gallery_box ul {
         max-width: 400px;
         width: 100%;
@@ -13435,6 +13481,20 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:768px) {
+    
+    .projectContainer {
+        margin-left: -100px;
+        
+        width: 100%;
+        height: 400px;
+    }
+    
+    .projectContainer img {
+        height: 400px;
+    }
+    .projectButton {
+        left: 40%;
+    }
     .pg_inv_claims .tbl .hdr .col:nth-child(2) {
         text-align: right;
         padding-right: 14px
@@ -14196,6 +14256,9 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:555px) {
+    .projectButton {
+        left: 40%;
+    }
     .regi_tp {
         margin-bottom: 5px
     }
@@ -14665,21 +14728,25 @@ html.lb-disable-scrolling {
 }
 
 @media screen and (max-width:531px) {
+    .projectContainer {
+        /* margin-left: -100px; */
+        
+        width: 100%;
+        height: 400px;
+    }
+    
+    .projectContainer img {
+        height: 400px;
+    }
+    .projectButton {
+        left: 40%;
+    }
     .vedio_section ul li {
         float: none;
         margin-left: 0;
         max-width: inherit
     }
-    .projectContainer {
-        width: 300px;
-        height: 400px;
-        margin-right: 50px !important;
-        padding-right: 40px !important;
-    }
-    .projectContainer img {
-        width: 300px;
-        height: 400px;
-    }
+    
 }
 
 @media screen and (max-width:480px) {
