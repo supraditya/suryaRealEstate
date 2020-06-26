@@ -27939,13 +27939,13 @@ $(document).ready(function() {
                 $(".frm").hide(),
                     1 == $(this).val() ?
                     $("#buying_form").show() :
-                    4 == $(this).val() ?
+                    2 == $(this).val() ?
                     $("#general_enquiries").show() :
-                    5 == $(this).val() ?
+                    3 == $(this).val() ?
                     $("#media_enquiries").show() :
-                    6 == $(this).val() ?
+                    4 == $(this).val() ?
                     $("#investor_enquiries").show() :
-                    7 == $(this).val() && $("#email_alerts").show();
+                    5 == $(this).val() && $("#email_alerts").show();
             }),
             $("#select_surya_offices").change(function() {
                 $(".offi").hide(),
