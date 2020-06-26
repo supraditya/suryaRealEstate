@@ -406,8 +406,7 @@
 
                     function(t, e) {
                         N.apply(t, O.call(e));
-                    } :
-                    function(t, e) {
+                    } : function(t, e) {
                         for (var i = t.length, n = 0;
                             (t[i++] = e[n++]););
                         t.length = i - 1;
@@ -1503,9 +1502,7 @@
         return (
             i && (t = ":not(" + t + ")"),
             1 === e.length && 1 === n.nodeType ?
-            d.find.matchesSelector(n, t) ?
-            [n] :
-            [] :
+            d.find.matchesSelector(n, t) ? [n] : [] :
             d.find.matches(
                 t,
                 d.grep(e, function(t) {
@@ -1555,8 +1552,7 @@
         if (!t) return this;
         if ("string" == typeof t) {
             if (!(i =
-                    "<" === t.charAt(0) && ">" === t.charAt(t.length - 1) && t.length >= 3 ?
-                    [null, t, null] :
+                    "<" === t.charAt(0) && ">" === t.charAt(t.length - 1) && t.length >= 3 ? [null, t, null] :
                     S.exec(t)) ||
                 (!i[1] && e)
             )
@@ -2605,8 +2601,7 @@
                 (this.fixHooks[s] = a = K.test(s) ?
                     this.mouseHooks :
                     V.test(s) ?
-                    this.keyHooks :
-                    {}),
+                    this.keyHooks : {}),
                 n = a.props ? this.props.concat(a.props) : this.props,
                 t = new d.Event(o),
                 e = n.length; e--;
@@ -4123,8 +4118,7 @@
     (d.speed = function(t, e, i) {
         var n =
             t && "object" == typeof t ?
-            d.extend({}, t) :
-            {
+            d.extend({}, t) : {
                 complete: i || (!i && e) || (d.isFunction(t) && t),
                 duration: t,
                 easing: (i && e) || (e && !d.isFunction(e) && e),
@@ -5121,8 +5115,7 @@
                                                 return {
                                                     state: "parsererror",
                                                     error: a ?
-                                                        t :
-                                                        "No conversion from " + l + " to " + o,
+                                                        t : "No conversion from " + l + " to " + o,
                                                 };
                                             }
                                 }
@@ -5314,8 +5307,7 @@
                             d.isArray(i) ?
                             d.map(i, function(t) {
                                 return { name: e.name, value: t.replace(Oe, "\r\n") };
-                            }) :
-                            { name: e.name, value: i.replace(Oe, "\r\n") };
+                            }) : { name: e.name, value: i.replace(Oe, "\r\n") };
                     })
                     .get();
             },
@@ -5501,8 +5493,7 @@
             "boolean" == typeof e && ((i = e), (e = !1)), (e = e || k);
             var n = y.exec(t),
                 s = !i && [];
-            return n ?
-                [e.createElement(n[1])] :
+            return n ? [e.createElement(n[1])] :
                 ((n = d.buildFragment([t], e, s)),
                     s && s.length && d(s).remove(),
                     d.merge([], n.childNodes));
@@ -6378,8 +6369,7 @@ jQuery.extend(jQuery.easing, {
                     return {
                         width: "scroll" === n ||
                             ("auto" === n && e.height < e.element[0].scrollHeight) ?
-                            t.position.scrollbarWidth() :
-                            0,
+                            t.position.scrollbarWidth() : 0,
                         height: s ? t.position.scrollbarWidth() : 0,
                     };
                 },
@@ -6417,25 +6407,21 @@ jQuery.extend(jQuery.easing, {
                     C = {};
                 return (
                     (g =
-                        9 === (b = (v = _)[0]).nodeType ?
-                        {
+                        9 === (b = (v = _)[0]).nodeType ? {
                             width: v.width(),
                             height: v.height(),
                             offset: { top: 0, left: 0 },
                         } :
-                        t.isWindow(b) ?
-                        {
+                        t.isWindow(b) ? {
                             width: v.width(),
                             height: v.height(),
                             offset: { top: v.scrollTop(), left: v.scrollLeft() },
                         } :
-                        b.preventDefault ?
-                        {
+                        b.preventDefault ? {
                             width: 0,
                             height: 0,
                             offset: { top: b.pageY, left: b.pageX },
-                        } :
-                        {
+                        } : {
                             width: v.outerWidth(),
                             height: v.outerHeight(),
                             offset: v.offset(),
@@ -6452,9 +6438,7 @@ jQuery.extend(jQuery.easing, {
                         1 === n.length &&
                             (n = s.test(n[0]) ?
                                 n.concat(["center"]) :
-                                o.test(n[0]) ?
-                                ["center"].concat(n) :
-                                ["center", "center"]),
+                                o.test(n[0]) ? ["center"].concat(n) : ["center", "center"]),
                             (n[0] = s.test(n[0]) ? n[0] : "center"),
                             (n[1] = o.test(n[1]) ? n[1] : "center"),
                             (t = a.exec(n[0])),
@@ -6684,8 +6668,7 @@ jQuery.extend(jQuery.easing, {
                         return function(i) {
                             return !!t.data(i, e);
                         };
-                    }) :
-                    function(e, i, n) {
+                    }) : function(e, i, n) {
                         return !!t.data(e, n[3]);
                     },
             }),
@@ -7526,8 +7509,7 @@ jQuery.extend(jQuery.easing, {
                                     .insertAfter(e)
                                     .css({
                                         display: /^(inline|ruby)/.test(e.css("display")) ?
-                                            "inline-block" :
-                                            "block",
+                                            "inline-block" : "block",
                                         visibility: "hidden",
                                         marginTop: e.css("marginTop"),
                                         marginBottom: e.css("marginBottom"),
@@ -9536,8 +9518,7 @@ jQuery.extend(jQuery.easing, {
                     return e.length && e[0].label && e[0].value ?
                         e :
                         t.map(e, function(e) {
-                            return "string" == typeof e ?
-                                { label: e, value: e } :
+                            return "string" == typeof e ? { label: e, value: e } :
                                 t.extend({}, e, {
                                     label: e.label || e.value,
                                     value: e.value || e.label,
@@ -9697,8 +9678,7 @@ jQuery.extend(jQuery.easing, {
                                 void(
                                     t.fn[n] &&
                                     ((a = e["_" + n + "Options"] ?
-                                            e["_" + n + "Options"]("middle") :
-                                            { classes: {} }),
+                                            e["_" + n + "Options"]("middle") : { classes: {} }),
                                         e.element.find(s).each(function() {
                                             var s = t(this),
                                                 o = s[n]("instance"),
@@ -10420,8 +10400,7 @@ jQuery.extend(jQuery.easing, {
                                     this._inlineClass +
                                     " ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'></div>"
                                 )
-                            ) :
-                            this.dpDiv,
+                            ) : this.dpDiv,
                     };
                 },
                 _connectDatepicker: function(e, i) {
@@ -10868,8 +10847,7 @@ jQuery.extend(jQuery.easing, {
                             t.datepicker._datepickerShowing &&
                             t.datepicker._hideDatepicker(t.datepicker._curInst.input[0])), !1 !==
                         (s = (n = t.datepicker._get(i, "beforeShow")) ?
-                            n.apply(e, [e, i]) :
-                            {}) &&
+                            n.apply(e, [e, i]) : {}) &&
                         (m(i.settings, s),
                             (i.lastVal = null),
                             (t.datepicker._lastInput = e),
@@ -10896,10 +10874,8 @@ jQuery.extend(jQuery.easing, {
                             (a = t.datepicker._checkOffset(i, a, o)),
                             i.dpDiv.css({
                                 position: t.datepicker._inDialog && t.blockUI ?
-                                    "static" :
-                                    o ?
-                                    "fixed" :
-                                    "absolute",
+                                    "static" : o ?
+                                    "fixed" : "absolute",
                                 display: "none",
                                 left: a.left + "px",
                                 top: a.top + "px",
@@ -11839,8 +11815,7 @@ jQuery.extend(jQuery.easing, {
                                     w = 0; w < 7; w++
                                 )
                                     (H = g ?
-                                        g.apply(t.input ? t.input[0] : null, [$]) :
-                                        [!0, ""]),
+                                        g.apply(t.input ? t.input[0] : null, [$]) : [!0, ""]),
                                     (W =
                                         ((L = $.getMonth() !== J) && !b) ||
                                         !H[0] ||
@@ -13147,8 +13122,7 @@ jQuery.extend(jQuery.easing, {
                             originalElement: this.element,
                             _proportionallyResizeElements: [],
                             _helper: i.helper || i.ghost || i.animate ?
-                                i.helper || "ui-resizable-helper" :
-                                null,
+                                i.helper || "ui-resizable-helper" : null,
                         }),
                         this.element[0].nodeName.match(
                             /^(canvas|textarea|input|select|button|img)$/i
@@ -13248,8 +13222,7 @@ jQuery.extend(jQuery.easing, {
                     if (
                         ((this.handles =
                                 a.handles ||
-                                (t(".ui-resizable-handle", this.element).length ?
-                                    {
+                                (t(".ui-resizable-handle", this.element).length ? {
                                         n: ".ui-resizable-n",
                                         e: ".ui-resizable-e",
                                         s: ".ui-resizable-s",
@@ -13353,12 +13326,8 @@ jQuery.extend(jQuery.easing, {
                             (n += t(o.containment).scrollTop() || 0)),
                         (this.offset = this.helper.offset()),
                         (this.position = { left: i, top: n }),
-                        (this.size = this._helper ?
-                            { width: this.helper.width(), height: this.helper.height() } :
-                            { width: a.width(), height: a.height() }),
-                        (this.originalSize = this._helper ?
-                            { width: a.outerWidth(), height: a.outerHeight() } :
-                            { width: a.width(), height: a.height() }),
+                        (this.size = this._helper ? { width: this.helper.width(), height: this.helper.height() } : { width: a.width(), height: a.height() }),
+                        (this.originalSize = this._helper ? { width: a.outerWidth(), height: a.outerHeight() } : { width: a.width(), height: a.height() }),
                         (this.sizeDiff = {
                             width: a.outerWidth() - a.width(),
                             height: a.outerHeight() - a.height(),
@@ -13851,9 +13820,7 @@ jQuery.extend(jQuery.easing, {
                         var e = t(this),
                             n = t(this).data("ui-resizable-alsoresize"),
                             s = {},
-                            o = e.parents(i.originalElement[0]).length ?
-                            ["width", "height"] :
-                            ["width", "height", "top", "left"];
+                            o = e.parents(i.originalElement[0]).length ? ["width", "height"] : ["width", "height", "top", "left"];
                         t.each(o, function(t, e) {
                                 var i = (n[e] || 0) + (r[e] || 0);
                                 i && i >= 0 && (s[e] = i || null);
@@ -15709,17 +15676,15 @@ jQuery.extend(jQuery.easing, {
                                 o.trigger("focus"),
                                 (r = o.offset()),
                                 (l = !t(e.target).parents().addBack().is(".ui-slider-handle")),
-                                (this._clickOffset = l ?
-                                    { left: 0, top: 0 } :
-                                    {
-                                        left: e.pageX - r.left - o.width() / 2,
-                                        top: e.pageY -
-                                            r.top -
-                                            o.height() / 2 -
-                                            (parseInt(o.css("borderTopWidth"), 10) || 0) -
-                                            (parseInt(o.css("borderBottomWidth"), 10) || 0) +
-                                            (parseInt(o.css("marginTop"), 10) || 0),
-                                    }),
+                                (this._clickOffset = l ? { left: 0, top: 0 } : {
+                                    left: e.pageX - r.left - o.width() / 2,
+                                    top: e.pageY -
+                                        r.top -
+                                        o.height() / 2 -
+                                        (parseInt(o.css("borderTopWidth"), 10) || 0) -
+                                        (parseInt(o.css("borderBottomWidth"), 10) || 0) +
+                                        (parseInt(o.css("marginTop"), 10) || 0),
+                                }),
                                 this.handles.hasClass("ui-state-hover") || this._slide(e, a, n),
                                 (this._animateOff = !0), !0))
                     );
@@ -16544,8 +16509,7 @@ jQuery.extend(jQuery.easing, {
                 },
                 _connectWith: function() {
                     var t = this.options;
-                    return t.connectWith.constructor === String ?
-                        [t.connectWith] :
+                    return t.connectWith.constructor === String ? [t.connectWith] :
                         t.connectWith;
                 },
                 _getItemsAsjQuery: function(e) {
@@ -19668,9 +19632,7 @@ jQuery.extend(jQuery.easing, {
             o,
             a = ["wheel", "mousewheel", "DOMMouseScroll", "MozMousePixelScroll"],
             r =
-            "onwheel" in document || document.documentMode >= 9 ?
-            ["wheel"] :
-            ["mousewheel", "DomMouseScroll", "MozMousePixelScroll"],
+            "onwheel" in document || document.documentMode >= 9 ? ["wheel"] : ["mousewheel", "DomMouseScroll", "MozMousePixelScroll"],
             l = Array.prototype.slice;
         if (t.event.fixHooks)
             for (var c = a.length; c;) t.event.fixHooks[a[--c]] = t.event.mouseHooks;
@@ -19789,9 +19751,7 @@ jQuery.extend(jQuery.easing, {
             o,
             a = ["wheel", "mousewheel", "DOMMouseScroll", "MozMousePixelScroll"],
             r =
-            "onwheel" in document || document.documentMode >= 9 ?
-            ["wheel"] :
-            ["mousewheel", "DomMouseScroll", "MozMousePixelScroll"],
+            "onwheel" in document || document.documentMode >= 9 ? ["wheel"] : ["mousewheel", "DomMouseScroll", "MozMousePixelScroll"],
             l = Array.prototype.slice;
         if (t.event.fixHooks)
             for (var c = a.length; c;) t.event.fixHooks[a[--c]] = t.event.mouseHooks;
@@ -20659,19 +20619,16 @@ jQuery.extend(jQuery.easing, {
                     P = function(e) {
                         var i = e.type,
                             n =
-                            e.target.ownerDocument !== document ?
-                            [
+                            e.target.ownerDocument !== document ? [
                                 t(frameElement).offset().top,
                                 t(frameElement).offset().left,
                             ] :
                             null,
                             s =
-                            $() && e.target.ownerDocument !== top.document ?
-                            [
+                            $() && e.target.ownerDocument !== top.document ? [
                                 t(e.view.frameElement).offset().top,
                                 t(e.view.frameElement).offset().left,
-                            ] :
-                            [0, 0];
+                            ] : [0, 0];
                         switch (i) {
                             case "pointerdown":
                             case "MSPointerDown":
@@ -20679,12 +20636,10 @@ jQuery.extend(jQuery.easing, {
                             case "MSPointerMove":
                             case "pointerup":
                             case "MSPointerUp":
-                                return n ?
-                                    [
-                                        e.originalEvent.pageY - n[0] + s[0],
-                                        e.originalEvent.pageX - n[1] + s[1], !1,
-                                    ] :
-                                    [e.originalEvent.pageY, e.originalEvent.pageX, !1];
+                                return n ? [
+                                    e.originalEvent.pageY - n[0] + s[0],
+                                    e.originalEvent.pageX - n[1] + s[1], !1,
+                                ] : [e.originalEvent.pageY, e.originalEvent.pageX, !1];
                             case "touchstart":
                             case "touchmove":
                             case "touchend":
@@ -20694,13 +20649,9 @@ jQuery.extend(jQuery.easing, {
                                     a =
                                     e.originalEvent.touches.length ||
                                     e.originalEvent.changedTouches.length;
-                                return e.target.ownerDocument !== document ?
-                                    [o.screenY, o.screenX, a > 1] :
-                                    [o.pageY, o.pageX, a > 1];
+                                return e.target.ownerDocument !== document ? [o.screenY, o.screenX, a > 1] : [o.pageY, o.pageX, a > 1];
                             default:
-                                return n ?
-                                    [e.pageY - n[0] + s[0], e.pageX - n[1] + s[1], !1] :
-                                    [e.pageY, e.pageX, !1];
+                                return n ? [e.pageY - n[0] + s[0], e.pageX - n[1] + s[1], !1] : [e.pageY, e.pageX, !1];
                         }
                     },
                     M = function() {
@@ -20873,11 +20824,8 @@ jQuery.extend(jQuery.easing, {
                                     ((C = 1), k.addClass("mCS_touch_action")),
                                     F && t.preventDefault(),
                                     (y =
-                                        "yx" === T.axis ?
-                                        [u - i, d - n] :
-                                        "x" === T.axis ?
-                                        [null, d - n] :
-                                        [u - i, null]),
+                                        "yx" === T.axis ? [u - i, d - n] :
+                                        "x" === T.axis ? [null, d - n] : [u - i, null]),
                                     (M[0].idleTimer = 250),
                                     S.overflowed[0] && l(y[0], O, s, "y", "all", !0),
                                     S.overflowed[1] && l(y[1], O, s, "x", z, !0);
@@ -20918,11 +20866,8 @@ jQuery.extend(jQuery.easing, {
                                         Math.abs(M[0].offsetLeft) - b[1] * r(u[1] / _[1], _[1]),
                                     ];
                                     (y =
-                                        "yx" === T.axis ?
-                                        [d[0], d[1]] :
-                                        "x" === T.axis ?
-                                        [null, d[1]] :
-                                        [d[0], null]),
+                                        "yx" === T.axis ? [d[0], d[1]] :
+                                        "x" === T.axis ? [null, d[1]] : [d[0], null]),
                                     (w = [
                                         4 * u[0] + T.scrollInertia,
                                         4 * u[1] + T.scrollInertia,
@@ -21546,11 +21491,8 @@ jQuery.extend(jQuery.easing, {
                             "function" == typeof e && (e = e()),
                             e instanceof Array ?
                             (s =
-                                e.length > 1 ?
-                                [e[0], e[1]] :
-                                "x" === i.axis ?
-                                [null, e[0]] :
-                                [e[0], null]) :
+                                e.length > 1 ? [e[0], e[1]] :
+                                "x" === i.axis ? [null, e[0]] : [e[0], null]) :
                             ((s[0] = e.y ? e.y : e.x || "x" === i.axis ? null : e),
                                 (s[1] = e.x ? e.x : e.y || "y" === i.axis ? null : e)),
                             "function" == typeof s[0] && (s[0] = s[0]()),
@@ -21745,11 +21687,9 @@ jQuery.extend(jQuery.easing, {
                             d = t("#mCSB_" + r.idx + "_container"),
                             p = d.parent(),
                             f = l.callbacks.onTotalScrollOffset ?
-                            R.call(e, l.callbacks.onTotalScrollOffset) :
-                            [0, 0],
+                            R.call(e, l.callbacks.onTotalScrollOffset) : [0, 0],
                             m = l.callbacks.onTotalScrollBackOffset ?
-                            R.call(e, l.callbacks.onTotalScrollBackOffset) :
-                            [0, 0];
+                            R.call(e, l.callbacks.onTotalScrollBackOffset) : [0, 0];
                         if (
                             ((r.trigger = s.trigger),
                                 (0 !== p.scrollTop() || 0 !== p.scrollLeft()) &&
@@ -22833,8 +22773,7 @@ jQuery.extend(jQuery.easing, {
                                             (d += e.pageX), (p += e.pageY);
                                         }),
                                         (d /= u),
-                                        (p /= u)), { pageX: d, pageY: p }) :
-                                {
+                                        (p /= u)), { pageX: d, pageY: p }) : {
                                     pageX: n.pageX || o.pageX || 0,
                                     pageY: n.pageY || o.pageY || 0,
                                 }),
@@ -25004,11 +24943,8 @@ jQuery.extend(jQuery.easing, {
                     };
 
                 function a(t) {
-                    return t.touches ?
-                        { x: t.touches[0].pageX, y: t.touches[0].pageY } :
-                        t.pageX !== n ?
-                        { x: t.pageX, y: t.pageY } :
-                        { x: t.clientX, y: t.clientY };
+                    return t.touches ? { x: t.touches[0].pageX, y: t.touches[0].pageY } :
+                        t.pageX !== n ? { x: t.pageX, y: t.pageY } : { x: t.clientX, y: t.clientY };
                 }
 
                 function r(e) {
@@ -28003,10 +27939,6 @@ $(document).ready(function() {
                 $(".frm").hide(),
                     1 == $(this).val() ?
                     $("#buying_form").show() :
-                    2 == $(this).val() ?
-                    $("#sobha_vendor").show() :
-                    3 == $(this).val() ?
-                    $("#channel_partner").show() :
                     4 == $(this).val() ?
                     $("#general_enquiries").show() :
                     5 == $(this).val() ?
@@ -28015,10 +27947,10 @@ $(document).ready(function() {
                     $("#investor_enquiries").show() :
                     7 == $(this).val() && $("#email_alerts").show();
             }),
-            $("#select_sobha_offices").change(function() {
+            $("#select_surya_offices").change(function() {
                 $(".offi").hide(),
-                    $("#shoba_offices_" + $(this).val()).show(),
+                    $("#surya_offices_" + $(this).val()).show(),
                     equalheight(".address-box li");
             }),
-            $("#select_sobha_offices").val(2).change();
+            $("#select_surya_offices").val(2).change();
     });
