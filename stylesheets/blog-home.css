@@ -88,3 +88,17 @@ body {
         padding: 0;
     }
 }
+
+
+/* Styling for Read More buttons */
+
+.buttonStyle {
+    width: 20% !important;
+}
+
+
+/* Paragraph styling */
+
+.content {
+    padding: 2% 2% 0% 0%;
+}
