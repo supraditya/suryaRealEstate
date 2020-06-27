@@ -102,3 +102,17 @@ body {
 .content {
     padding: 2% 2% 0% 0%;
 }
+
+
+/* To style the a tags wrapping the Read More buttons in the cards */
+
+.cardLink {
+    text-decoration: none !important;
+    color: #000;
+    opacity: 0.7;
+}
+
+.cardLink:hover {
+    color: #fff;
+    opacity: 1;
+}
