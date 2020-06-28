@@ -134,3 +134,7 @@ body {
     /* border: solid 1px; */
     /* width: 15%; */
 }
+
+.newArticle {
+    text-align: center;
+}
