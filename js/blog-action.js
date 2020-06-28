@@ -16,4 +16,22 @@ $(document).ready(function() {
                 }
             });
     });
+    $(".signout-icon").click(function() {
+        swal({
+                title: "Are you sure you want to Log Out?",
+                text: "You will be redirected back to the Admin Login page",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal({
+                        title: "You have successfully been logged out",
+                        icon: "success",
+                    });
+                }
+            });
+
+    });
 });
