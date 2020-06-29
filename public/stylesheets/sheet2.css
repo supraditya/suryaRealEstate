@@ -1,0 +1,50 @@
+header .md a img {
+  position: absolute;
+}
+
+header .md a img:nth-child(1) {
+  opacity: 1;
+  margin-top: 0px;
+}
+
+header .md a img:nth-child(2) {
+  opacity: 0;
+  margin-top: -10px;
+  left: -2px;
+}
+
+header .md a.foo img {
+  margin-top: -26px;
+}
+
+.main-preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999999999;
+  background-color: #ffe090;
+  text-align: center;
+}
+
+.main-preloader .main-preloader-inner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.main-preloader .preloader-percentage {
+  color: #ffffff;
+  margin: 0;
+}
+
+.main-preloader .preloader-percentage span {
+  display: inline-block;
+  float: none;
+  font-size: 50px;
+}
+
+.main-preloader .preloader-percentage img.loader_gif {
+  transform: translateY(-50%) scale(0.5);
+}

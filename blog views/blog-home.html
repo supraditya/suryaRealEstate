@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheets/blog-home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>Blog | Surya Nestbuild Ltd.</title>
-</head>
-
-<body>
+  <body>
     <div class="header">
-        <!-- <h2>Blog Name</h2> -->
-        <span><img style="width: 100px; height: 100px;" src="../assets/logo_final.png" alt="Company Logo"> | BlogPost</span>
+      <!-- <h2>Blog Name</h2> -->
+      <span
+        ><img
+          style="width: 100px; height: 100px;"
+          src="../assets/logo_final.png"
+          alt="Company Logo"
+        />
+        | BlogPost</span
+      >
     </div>
 
     <div class="row">
-        <div class="leftcolumn">
-            <!-- Card div and its contents are the article preview component -->
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p class="content">Fugiat ipsum mollit est commodo aliquip veniam ipsum amet. Eu aliqua non sunt sit laborum in eiusmod enim cillum labore adipisicing. Aute officia aliqua incididunt cupidatat cupidatat do do ullamco. Dolor tempor in ipsum Lorem ex ad et
-                    adipisicing deserunt cillum officia fugiat. Elit nisi ut pariatur Lorem ut fugiat laboris id sit nulla minim quis voluptate ex. Voluptate enim sint et exercitation dolor enim ea commodo pariatur laborum ullamco. Pariatur laborum sint
-                    laborum nulla nostrud excepteur quis non dolore.</p>
-                <button type="button" class="btn btn-outline-secondary buttonStyle"><a href="#" class="stretched-link cardLink">Read More</a></button>
-            </div>
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p class="content">Fugiat ipsum mollit est commodo aliquip veniam ipsum amet. Eu aliqua non sunt sit laborum in eiusmod enim cillum labore adipisicing. Aute officia aliqua incididunt cupidatat cupidatat do do ullamco. Dolor tempor in ipsum Lorem ex ad et
-                    adipisicing deserunt cillum officia fugiat. Elit nisi ut pariatur Lorem ut fugiat laboris id sit nulla minim quis voluptate ex. Voluptate enim sint et exercitation dolor enim ea commodo pariatur laborum ullamco. Pariatur laborum sint
-                    laborum nulla nostrud excepteur quis non dolore.</p>
-                <button type="button" class="btn btn-outline-secondary buttonStyle"><a href="#" class="stretched-link cardLink">Read More</a></button>
-            </div>
+      <div class="leftcolumn">
+        <!-- Card div and its contents are the article preview component -->
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p class="content">
+            Fugiat ipsum mollit est commodo aliquip veniam ipsum amet. Eu aliqua
+            non sunt sit laborum in eiusmod enim cillum labore adipisicing. Aute
+            officia aliqua incididunt cupidatat cupidatat do do ullamco. Dolor
+            tempor in ipsum Lorem ex ad et adipisicing deserunt cillum officia
+            fugiat. Elit nisi ut pariatur Lorem ut fugiat laboris id sit nulla
+            minim quis voluptate ex. Voluptate enim sint et exercitation dolor
+            enim ea commodo pariatur laborum ullamco. Pariatur laborum sint
+            laborum nulla nostrud excepteur quis non dolore.
+          </p>
+          <button type="button" class="btn btn-outline-secondary buttonStyle">
+            <a href="#" class="stretched-link cardLink">Read More</a>
+          </button>
         </div>
-        <div class="rightcolumn">
-            <div class="card">
-                <h2>About Surya</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            </div>
-            <!-- <div class="card">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p class="content">
+            Fugiat ipsum mollit est commodo aliquip veniam ipsum amet. Eu aliqua
+            non sunt sit laborum in eiusmod enim cillum labore adipisicing. Aute
+            officia aliqua incididunt cupidatat cupidatat do do ullamco. Dolor
+            tempor in ipsum Lorem ex ad et adipisicing deserunt cillum officia
+            fugiat. Elit nisi ut pariatur Lorem ut fugiat laboris id sit nulla
+            minim quis voluptate ex. Voluptate enim sint et exercitation dolor
+            enim ea commodo pariatur laborum ullamco. Pariatur laborum sint
+            laborum nulla nostrud excepteur quis non dolore.
+          </p>
+          <button type="button" class="btn btn-outline-secondary buttonStyle">
+            <a href="#" class="stretched-link cardLink">Read More</a>
+          </button>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Surya</h2>
+          <div class="fakeimg" style="height: 100px;">Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <!-- <div class="card">
                 <h3>Popular Post</h3>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div>
             </div> -->
-            <div class="card">
-                <h3>Follow Us</h3>
-                <p>Twitter</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
-            </div>
+        <div class="card">
+          <h3>Follow Us</h3>
+          <p>Twitter</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
         </div>
+      </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+      <h2>Footer</h2>
     </div>
-</body>
-
+  </body>
 </html>

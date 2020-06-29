@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <section class="fs_inner">
+      <div class="pc">
+        <!-- INSERT BACKGROUND IMAGE EJS AS CSS BACKGROUND ATTRIBUTE HERE -->
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background: url(assets/mapview_placeholder.jpg) no-repeat center
+              center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="fd"></div>
+      <div class="tx">Passion at Work</div>
+    </section>
+    <section class="innercont pg_philosophy">
+      <div id="map_dropdown " style="width: 40%; margin-bottom: 4%;">
+        <select name="locations " id="locations " onclick="initMap() ">
+          <!-- Update options acc to api fetch and value with location url -->
+          <!-- If url is https://goo.gl/maps/oFFpr5qyJ229Mk9KA, just paste oFFpr5qyJ229Mk9KA in value -->
+          <!-- API KEY NEEDS TO BE CHANGED AND BILLING MUST BE ENABLED -->
+          <option value="oFFpr5qyJ229Mk9KA ">Laxmi Apartment</option>
+          <option value="Delhi ">Delhi</option>
+          <option value="London ">London</option>
+        </select>
+      </div>
+      <div id="wrapper">
+        <!-- NeedssqueryString, place_id, centerCoord, cid, -->
+        <div id="map"></div>
+        <script>
+          (function () {
+            var setting = {
+              height: 500,
+              width: 700,
+              zoom: 17,
+              queryString:
+                "Parvathi Path, New Chitragupta Nagar, Mahatma Gandhi Nagar, Chitragupta Nagar, Patna, Bihar 800020, India",
+              place_id:
+                "EmlQYXJ2YXRoaSBQYXRoLCBOZXcgQ2hpdHJhZ3VwdGEgTmFnYXIsIE1haGF0bWEgR2FuZGhpIE5hZ2FyLCBDaGl0cmFndXB0YSBOYWdhciwgUGF0bmEsIEJpaGFyIDgwMDAyMCwgSW5kaWEiLiosChQKEgkjhYXAlljtORGoGgu9tPRksRIUChIJ2TB5ipZY7TkRpJTNLelfGk0",
+              satellite: false,
+              centerCoord: [25.598955407608212, 85.16683139999999],
+              cid: "0xb164f4b4bd0b1aa8",
+              lang: "en",
+              cityUrl: "/india/patna-10047",
+              cityAnchorText: "Map of Patna, Bihar, India",
+              id: "map",
+              embed_id: "229640",
+            };
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://1map.com/js/script-for-user.js?embed_id=229640";
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting);
+            };
+            var to = d.getElementsByTagName("script")[0];
+            to.parentNode.insertBefore(s, to);
+          })();
+        </script>
+        <a href="https://1map.com/map-embed">1 Map</a>
+      </div>
+    </section>
+    <%- include("footer.ejs") %>
+    <script
+      src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js "
+      data-cf-settings="a9285b2494881c5c85ef6098-|49 "
+      defer=" "
+    ></script>
+  </body>
+</html>

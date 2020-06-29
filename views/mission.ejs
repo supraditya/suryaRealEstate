@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <section class="fs_inner">
+      <div class="pc">
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background: url(./assets/mission.jpg) no-repeat center center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="fd"></div>
+      <div class="tx">Philosophy</div>
+    </section>
+    <section class="innercont pg_philosophy">
+      <div class="ct">
+        <div class="nav">
+          <div class="select-wrapper">
+            <select
+              class="navdd"
+              onchange="if (!window.__cfRLUnblockHandlers) return false; window.location.replace(this.options[this.selectedIndex].value) "
+              data-cf-modified-06b43f84d6f07fea28a654a3-=" "
+            >
+              <option value="About Us.html ">About Us</option>
+              <option selected="selected " value="Mission.html "
+                >Our Mission</option
+              >
+              <option value="Vision.html ">Our Vission</option>
+              <option value="Insignia.html ">Insignia</option>
+              <option value="Message.html ">Message</option>
+            </select>
+          </div>
+          <div class="lks">
+            <a href="About Us.html ">About Us</a>
+            <a class="active nobg" href="Mission.html ">Our Mission</a>
+            <a href="Vision.html ">Our Vision</a>
+            <a href="Insignia.html ">Insignia</a>
+            <a href="Message.html ">Message</a>
+          </div>
+        </div>
+        <div class="ttl_cap">Our Mission</div>
+        <div class="bdtext ctsmall">
+          <p>
+            We work with a mission to develop unique residential & commercial
+            infrastructures, which are known for its high quality architectural
+            designs, without compromising in terms of quality. We follow
+            customer-centric approach and strive hard, in order to establish
+            long term relationship with our esteemed clients. We wish to promote
+            quality living with our residential and commercial developments and
+            also promote developed and more planned pattern of lifestyle.
+          </p>
+          <p>
+            We aim to achieve high standards of efficiency, professionalism and
+            core institutional values and also set new benchmarks in the
+            industry. Being a reputed organization, we help our clients in
+            realizing their dreams by continuously exceeding their expectations
+            in terms of quality and innovative real estate solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <%- include("footer.ejs") %>
+    <script
+      src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js "
+      data-cf-settings="06b43f84d6f07fea28a654a3-|49 "
+      defer=" "
+    ></script>
+  </body>
+</html>

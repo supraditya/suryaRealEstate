@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+    <style>
+      .tttl {
+        font-size: 26px;
+        line-height: 26px;
+        color: #5d5a5a;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .btn08 {
+        background-color: transparent;
+        border: 1px solid whitesmoke;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100px;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        opacity: 1;
+        -webkit-transition: all 0.9s ease;
+        -moz-transition: all 0.9s ease;
+        -o-transition: all 0.9s ease;
+        transition: all 0.9s ease;
+      }
+
+      .hp_loc .dv:hover .btn08 {
+        background-color: transparent;
+        border: 1px solid black;
+        text-shadow: 0 2px 5px black;
+      }
+
+      button:focus {
+        border: 1px solid black !important;
+        box-shadow: none !important;
+        outline-color: none !important;
+      }
+
+      .hd_txt {
+        font-variant: small-caps;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <section class="fs_inner">
+      <div class="pc">
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background: url(./assets/projects.jpg) no-repeat center center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="fd"></div>
+      <div class="tx">About Us</div>
+    </section>
+    <div class="tttl">Commercial Projects</div>
+    <div class="hp_loc">
+      <div class="lt">
+        <div class="pd">
+          <div class="dv">
+            <div
+              class="bg-zoom"
+              style="
+                background: url(./assets/commercial.jpg) no-repeat center center;
+                background-size: cover;
+              "
+            ></div>
+            <div class="bg"></div>
+            <div class="tx1">Surya Crystal</div>
+            <button
+              type="button"
+              class="btn btn-primary projectButton btn08"
+              data-toggle="modal"
+              data-target="#Tile1"
+            >
+              Details
+            </button>
+            <div
+              class="modal fade"
+              id="Tile1"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Surya Crystal
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span class="hd_txt">Location :</span> Main Boring Road
+                    Chauraha, Patna<br />
+                    <div class="LocationMap"></div>
+                    <span class="hd_txt">Type :</span> Commercial<br />
+                    <span class="hd_txt">Current Status :</span> Space Vacant
+                    for shops, Show Rooms, Office, Gym, Restaurant, Spa, etc.<br />
+                    <span class="hd_txt">Status :</span> READY TO MOVE<br />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lt">
+        <div class="pd">
+          <div class="dv">
+            <div
+              class="bg-zoom"
+              style="
+                background: url(./assets/commercial.jpg) no-repeat center center;
+                background-size: cover;
+              "
+            ></div>
+            <div class="bg"></div>
+            <div class="tx1">Surya B.P. Commercial</div>
+            <button
+              type="button"
+              class="btn btn-primary projectButton btn08"
+              data-toggle="modal"
+              data-target="#Tile2"
+            >
+              Details
+            </button>
+            <div
+              class="modal fade"
+              id="Tile2"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Surya B.P. Commercial
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span class="hd_txt">Location :</span> Saguna More, Patna<br />
+                    <div class="LocationMap"></div>
+                    <span class="hd_txt">Type :</span> Commercial<br />
+                    <span class="hd_txt">Current Status :</span> Space Vacant
+                    for shops, Show Rooms, Office, Gym, Restaurant, Spa, etc.<br />
+                    <span class="hd_txt">Status :</span> READY TO MOVE<br />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lt">
+        <div class="pd">
+          <div class="dv">
+            <div
+              class="bg-zoom"
+              style="
+                background: url(./assets/commercial.jpg) no-repeat center center;
+                background-size: cover;
+              "
+            ></div>
+            <div class="bg"></div>
+            <div class="tx1">Surya Shivambika Apartment</div>
+            <button
+              type="button"
+              class="btn btn-primary projectButton btn08"
+              data-toggle="modal"
+              data-target="#Tile3"
+            >
+              Details
+            </button>
+            <div
+              class="modal fade"
+              id="Tile3"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Surya Shivambika Apartment
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span class="hd_txt">Location :</span> Boring Patliputra
+                    Road, Patna<br />
+                    <div class="LocationMap"></div>
+                    <span class="hd_txt">Type :</span> Commercial<br />
+                    <span class="hd_txt">Status :</span> READY TO MOVE<br />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lt">
+        <div class="pd">
+          <div class="dv">
+            <div
+              class="bg-zoom"
+              style="
+                background: url(./assets/commercial.jpg) no-repeat center center;
+                background-size: cover;
+              "
+            ></div>
+            <div class="bg"></div>
+            <div class="tx1">Surya Business Centre</div>
+            <button
+              type="button"
+              class="btn btn-primary projectButton btn08"
+              data-toggle="modal"
+              data-target="#Tile4"
+            >
+              Details
+            </button>
+            <div
+              class="modal fade"
+              id="Tile4"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Surya Business Centre
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span class="hd_txt">Location :</span> Rupaspur, Bailey
+                    Road, Patna<br />
+                    <div class="LocationMap"></div>
+                    <span class="hd_txt">Type :</span> Commercial<br />
+                    <span class="hd_txt">Status :</span> READY TO MOVE<br />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="clear"></div>
+    </div>
+    <br />
+    <br />
+    <script
+      src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="06b43f84d6f07fea28a654a3-|49"
+      defer=""
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+    <style>
+      .tttl {
+        font-size: 26px;
+        line-height: 26px;
+        color: #5d5a5a;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("header.ejs") %>
+    <section class="fs_inner">
+      <div class="pc">
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background: url(./assets/projects.jpg) no-repeat center center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="fd"></div>
+      <div class="tx">About Us</div>
+    </section>
+
+    <div class="tttl">Projects</div>
+    <div class="hp_loc">
+      <div class="dvleft">
+        <div class="lt">
+          <a href="residential.html" class="bx">
+            <div class="pd">
+              <div class="dv">
+                <div
+                  class="bg-zoom"
+                  style="
+                    background: url(./assets/residential.jpg) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="bg"></div>
+                <div class="tx1">Residential</div>
+                <div class="tx2 foo">Explore</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lt">
+          <a href="commercial.html" class="bx">
+            <div class="pd">
+              <div class="dv">
+                <div
+                  class="bg-zoom"
+                  style="
+                    background: url(./assets/commercial.jpg) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="bg"></div>
+                <div class="tx1">Commercial</div>
+                <div class="tx2 foo">Explore</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <br />
+    <br />
+    <%- include("footer.ejs") %>
+    <script
+      src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="06b43f84d6f07fea28a654a3-|49"
+      defer=""
+    ></script>
+  </body>
+</html>

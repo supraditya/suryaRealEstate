@@ -1,41 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <%- include("headsection.ejs") %>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../stylesheets/blog-admin-login.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Blog Admin Login | Surya NestBuild Ltd.</title>
-</head>
-
-<body>
-
+  <body>
     <div class="container" style="text-align: center;">
-        <div class="vertical-center">
-            <h1>Surya Blog | Admin Login</h1>
-            <br>
-            <br>
-            <form action="#">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-                <br>
-                <br>
-                <label for="pwd">Password:&nbsp</label>
-                <input type="password" id="pwd" name="pwd">
-                <br>
-                <br>
-                <input type="submit" value="Log In" id="submitbtn">
-            </form>
-        </div>
-
+      <div class="vertical-center">
+        <h1>Surya Blog | Admin Login</h1>
+        <br />
+        <br />
+        <form action="#">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <br />
+          <br />
+          <label for="pwd">Password:&nbsp</label>
+          <input type="password" id="pwd" name="pwd" />
+          <br />
+          <br />
+          <input type="submit" value="Log In" id="submitbtn" />
+        </form>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
