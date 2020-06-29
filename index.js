@@ -12,6 +12,14 @@ app.set("x-powered-by", false);
 app.set("view engine", "ejs");
 app.set("views", path.join(process.cwd(), "views"));
 
+app.get("/", (req, res, next) => {
+  res.render("index");
+});
+
+app.get("/index", (req, res, next) => {
+  res.render("index");
+});
+
 app.get("/:static", (req, res, next) => {
   res.render(req.params.static);
 });
